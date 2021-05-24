@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientSingleItemActivity"
+    android:orientation="vertical"
+    android:background="@drawable/patient_add_header">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:onClick="listPatient"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:text="Páciens adatai"
+                    android:gravity="top|center_horizontal"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/vezeteknev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Vezetéknév"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/keresztnev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Keresztnév"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/telefonszam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:backgroundTint="@color/white"
+                android:hint="Telefonszám"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Spinner
+                android:id="@+id/neme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:hint="Neme"
+                android:textColor="#FF0000" />
+
+            <EditText
+                android:id="@+id/szuletese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Születési év"
+                android:inputType="date"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email cím"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/cime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:hint="Cím"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/csaladiallapot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="Családi állapota"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/hozzatartozo_adatai_szoveg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Hozzátartozó adatai"
+                android:gravity="top|center_horizontal"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/hozzatartozo_vezeteknev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Hozzátartozó vezetéknév"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/hozzatartozo_keresztnev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Hozzátartozó keresztnév"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/hozzatartozo_telefonszam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:backgroundTint="@color/white"
+                android:hint="Hozzátartozó telefonszám"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/hozzatartozo_neme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:hint="Hozzátartozó neme"
+                android:textColor="#FF0000"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Műveletek"
+                android:gravity="top|center_horizontal"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/frissites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRISSÍTÉS"
+                />
+
+            <Button
+                android:id="@+id/torles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TÖRLÉS"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

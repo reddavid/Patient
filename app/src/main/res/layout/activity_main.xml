@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patient_add_header"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/szoveg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top|center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Patient"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp" />
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/szoveg2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top|center_horizontal"
+        android:text="Rédai Dávid"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+
+
+
+    </LinearLayout>
